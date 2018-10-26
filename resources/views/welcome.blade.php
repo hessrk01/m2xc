@@ -11,21 +11,20 @@
         <div id="app" class="wrapper">
             @include('inc.nav')
             @include('welcome.showcase')
-        
         </div>
-        <div>
-                <section id="info">
-                    @for ($i = 1; $i < 30; $i++)
-                        blah blah <br>
-                    @endfor
-                </section>
-        
-        
-        
-            </div>
+        {{-- who --}}
+ 
+        @include('welcome.about')
+        @include('welcome.services')
+        @include('welcome.contact')
+        @include('welcome.footer')
         {{-- scripts --}}
         <script src="{{ asset('js/particles.js') }}" ></script>
         <script src="{{ asset('js/scroll.js') }}" defer ></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlr5SMphZfkmH1hxEphdmto-XzRNl1j9o&callback=initializeMap"
+  type="text/javascript"></script>
+        <script src="{{ asset('js/map.js') }}" defer ></script>
+        
     
     </body>
     

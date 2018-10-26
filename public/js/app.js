@@ -13924,7 +13924,7 @@ particlesJS.load('particles-js', 'js/particles.json', function () {
 try {
   window.Typed = __webpack_require__(43);
   var typed = new Typed('.element', {
-    strings: ['<font color="black">Business.</font>', '<font color="black">Goals.</font>', '<font color="black">Potential.</font>', '<font color="black">Ideas.</font>'],
+    stringsElement: '#typed-strings',
     typeSpeed: 90,
     startDelay: 500,
     smartBackspace: false,

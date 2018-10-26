@@ -13,10 +13,10 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="navbar-nav ml-auto">
-                            <a href="#home" class="nav-item nav-link">Home</a>
-                            <a href="#info" class="nav-item nav-link">Link</a>
-                            <a href="#" class="nav-item nav-link">Link</a>
-                            <a href="#" class="nav-item nav-link">Link</a>
+                            
+                            <a href="#about" class="nav-item nav-link">About</a>
+                            <a href="#services" class="nav-item nav-link">Services</a>
+                            <a href="#connect" class="nav-item nav-link">Connect</a>
                         </div>
                 </div>
         </nav>
