@@ -5,8 +5,8 @@
         <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 col-12">
                     <div class="section-title">
-                            <h6>What we do at</h6>
-                            <h2>{{ config('app.title', 'Managing to Excellence') }}</h2>
+                            <h3>What we do</h3>
+                            {{-- <h2>{{ config('app.title', 'Managing to Excellence') }}</h2> --}}
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod praesentium ab natus dicta non enim tenetur, debitis cum quo velit ratione expedita quas unde provident quisquam illum reiciendis animi!</p>
                     </div>
                 </div>

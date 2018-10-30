@@ -16,6 +16,7 @@
  
         @include('welcome.about')
         @include('welcome.services')
+        @include('welcome.team')
         @include('welcome.contact')
         @include('welcome.footer')
         {{-- scripts --}}

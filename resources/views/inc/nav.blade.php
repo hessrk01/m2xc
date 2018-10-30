@@ -16,6 +16,7 @@
                             
                             <a href="#about" class="nav-item nav-link">About</a>
                             <a href="#services" class="nav-item nav-link">Services</a>
+                            <a href="#team" class="nav-item nav-link">Team</a>
                             <a href="#connect" class="nav-item nav-link">Connect</a>
                         </div>
                 </div>

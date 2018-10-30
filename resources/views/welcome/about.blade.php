@@ -1,19 +1,19 @@
 
-{{-- who are we --}}
+{{-- about --}}
 <section id="about" class="section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 col-12">
                 <div class="section-title">
-                        <h6>Welcome To</h6>
-                        <h2>{{ config('app.title', 'Managing to Excellence') }}</h2>
+                        <h3>What we are about</h3>
+                    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod praesentium ab natus dicta non enim tenetur, debitis cum quo velit ratione expedita quas unde provident quisquam illum reiciendis animi!</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                <div class="top-agencey-content">
+                <div class="top-agency-content">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div class="single-top-agency">
