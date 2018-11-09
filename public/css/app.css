@@ -10471,6 +10471,7 @@ a.text-dark:focus {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  width: 100%;
 }
 
 .navbar .nav-item {
@@ -10519,34 +10520,50 @@ img {
 
 .showcase {
   display: table;
-  width: 100%;
+  width: 99%;
   padding: 3%;
 }
 
+.showcase img {
+  border-radius: 0%;
+  height: 60%;
+  width: 60%;
+}
+
 .absolute-wrapper {
+  z-index: -1;
   position: absolute;
-  top: 35%;
+  top: 15%;
+  left: 8%;
   width: 38%;
+}
+
+.absolute-wrapper h2.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  bottom: 215px;
+  left: 15px;
+}
+
+.absolute-wrapper h2.title span {
+  color: #8FC33E;
+}
+
+.absolute-wrapper h3.tagline {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  position: relative;
+  bottom: 135px;
+  left: 15px;
 }
 
 .top_45 {
   margin-top: 45px;
-}
-
-h1.title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 70px;
-  font-weight: 700;
-}
-
-h1.title span {
-  color: #8FC33E;
-}
-
-h2.tagline {
-  font-family: 'Raleway', sans-serif;
-  font-size: 35px;
-  font-weight: 400;
 }
 
 /*section-title*/
@@ -10671,10 +10688,9 @@ h2.tagline {
 /* ---- particles.js container ---- */
 
 #particles-js {
+  z-index: -10;
   width: 100%;
   height: 700px;
-  background-size: cover;
-  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 

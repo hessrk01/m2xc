@@ -1,8 +1,8 @@
 
 
 <div class="row justify-content-center ">
-    <div class="col-8 position-fixed">
-        <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light mt-4">
+    <div class="col position-fixed">
+        <nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <a href="{{ Request::is('/') ? '#home' : route('welcome')  }}" class="navbar-brand">
                     <img src="{{asset('img/icon_transparent.png')}}" width="48"  alt="">
                     <span class="navtitle"><h4 class="d-inline align-middle ml-1">Managing to Excellence</h4></span>
