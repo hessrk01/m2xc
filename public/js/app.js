@@ -13945,7 +13945,7 @@ try {
     shuffle: true,
     typeSpeed: 100,
     // backSpeed: 80,
-    backDelay: 4000,
+    backDelay: 3000,
     smartBackspace: false,
     startDelay: 1000,
     // fadeOut: true,

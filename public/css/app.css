@@ -10526,8 +10526,9 @@ img {
 
 .showcase img {
   border-radius: 0%;
-  height: 60%;
-  width: 60%;
+  height: 55%;
+  width: 55%;
+  opacity: 0.70;
 }
 
 .absolute-wrapper {
@@ -10540,12 +10541,12 @@ img {
 
 .absolute-wrapper h2.title {
   font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   color: #fff;
   position: absolute;
-  bottom: 215px;
-  left: 15px;
+  bottom: 185px;
+  left: 25px;
 }
 
 .absolute-wrapper h2.title span {
@@ -10558,8 +10559,8 @@ img {
   font-weight: 400;
   color: #fff;
   position: relative;
-  bottom: 135px;
-  left: 15px;
+  bottom: 100px;
+  left: 25px;
 }
 
 .top_45 {
