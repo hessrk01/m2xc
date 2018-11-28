@@ -1,0 +1,250 @@
+footer {}
+
+.footer-top-area {
+  background: #303030 none repeat scroll 0 0;
+  padding: 59px 0 31px;
+}
+
+.footer-widget {
+  margin: 0 0 30px;
+}
+
+.footer-widget .title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin: 0 0 31px;
+}
+
+.flogo img{
+  height: 50px;
+
+}
+.fw-info {}
+
+.fw-info .flogo {
+  margin: 0 0 19px;
+}
+
+.fw-info .flogo img {}
+
+.fw-info .text {
+  border-bottom: 1px solid #616161;
+  color: #fff;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 0 21px;
+  padding: 0 0 19px;
+}
+
+.fw-info .address {
+  margin: 0 0 22px;
+}
+
+.fw-info .address h5 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.fw-info .address h5 span {
+  color: #ffffff;
+  margin-right: 6px;
+}
+
+.fw-info .address p {
+  color: #fff;
+  line-height: 24px;
+}
+
+.fw-info .social {
+  list-style: outside none none;
+  padding: 0;
+}
+
+.fw-info .social li {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.fw-info .social li a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100px;
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+.fw-info .social li a:hover {
+  background: #3fb698 none repeat scroll 0 0;
+  color: #fff;
+}
+
+.fw-categories {}
+
+.fw-categories .list {
+  list-style: outside none none;
+  padding: 0;
+}
+
+.fw-categories .list li {}
+
+.fw-categories .list li a {
+  color: #fff;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin: 0 0 12px;
+}
+
+.fw-categories .list li a:hover {
+  color: #3fb698;
+  margin-left: 3px;
+}
+
+.fw-categories .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.fw-categories .list li a span {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.fw-insta {}
+
+.fw-insta .insta {
+  list-style: outside none none;
+  padding: 0;
+}
+
+.fw-insta .insta li {
+  display: inline-block;
+  margin: 0 0 5px;
+}
+
+.fw-insta .insta li a {
+  display: block;
+  position: relative;
+}
+
+.fw-insta .insta li a::before {
+  background: #3fb698 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.fw-insta .insta li a:hover::before {
+  opacity: 0.6;
+}
+
+.fw-insta .insta li a img {}
+
+.fw-insta .insta li a:hover img {}
+
+.fw-rpost {}
+
+.fw-rpost .rpost {
+  list-style: outside none none;
+  padding: 0;
+}
+
+.fw-rpost .rpost li {
+  margin: 0 0 5px;
+}
+
+.fw-rpost .rpost li a {
+  background: #3b3b3b none repeat scroll 0 0;
+  display: block;
+  overflow: hidden;
+}
+
+.fw-rpost .rpost li a .img {
+  display: block;
+  float: right;
+  width: 68px;
+}
+
+.fw-rpost .rpost li a .img img {}
+
+.fw-rpost .rpost li a .content {
+  display: block;
+  overflow: hidden;
+  padding: 8px 14px;
+}
+
+.fw-rpost .rpost li a .content .name {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 0 0 3px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.fw-rpost .rpost li a .content .name:hover {
+  color: #3fb698;
+}
+
+.fw-rpost .rpost li a .content .date {
+  color: #fff;
+  display: block;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.fw-rpost .rpost li a .content .date span {
+  color: #ffffff;
+  margin-right: 2px;
+}
+
+/*footer-bottom*/
+
+.footer-bottom-area {
+  background: #222222 none repeat scroll 0 0;
+  padding: 16px 0;
+}
+
+.fba-left {}
+
+.fba-left p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+}
+
+.fba-left p a {
+  color: #3fb698;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.fba-right {
+  text-align: right;
+}
+
+.fba-right p {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+}

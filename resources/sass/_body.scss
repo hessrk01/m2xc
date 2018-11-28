@@ -1,0 +1,24 @@
+
+
+.single-team-member img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+  
+  #team img {
+    margin-top: -60px;
+    
+    filter: grayscale(100%);
+  
+  }
+
+.success {
+  border-radius: 25%;
+  height: 250px;
+  width: auto;
+  // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}

@@ -1,0 +1,59 @@
+
+.showcase {
+    height: 98vh;
+    width: 98vw;
+}
+
+
+#shadow {
+    opacity: 0.75;
+    z-index: -10;
+    width: auto;
+    height: 550px;
+    top: 175px;
+    left: 20px;
+    position: absolute;
+}
+
+
+#showcaseStart {
+    top: 360px;
+    left: 40px;
+    position: absolute;
+    font-size: 50px;
+    color: $white;
+    z-index: -09;
+}
+
+#showcaseSkill {
+    font-size: 40px;
+    color: $primary;
+    top: 480px;
+    left: 40px;
+    position: absolute;
+    z-index: -09;
+}
+
+#showcaseGoalStart {
+    font-size: 36px;
+    color: $white;
+    top: 560px;
+    left: 40px;
+    position: absolute; 
+    z-index: -09;
+}
+#showcaseGoal {
+    font-size: 36px;
+    color: $primary;
+    top: 560px;
+    left: 105px;
+    position: absolute; 
+    z-index: -09;
+}
+
+#showcaseButton {
+    top: 660px;
+    left: 440px;
+    position: absolute;
+    // z-index: -01;
+}

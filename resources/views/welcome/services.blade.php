@@ -6,7 +6,7 @@
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 col-12">
                     <div class="section-title">
                             <h3>What we do</h3>
-                            {{-- <h2>{{ config('app.title', 'Managing to Excellence') }}</h2> --}}
+                            
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod praesentium ab natus dicta non enim tenetur, debitis cum quo velit ratione expedita quas unde provident quisquam illum reiciendis animi!</p>
                     </div>
                 </div>
@@ -16,12 +16,12 @@
                     <div class="boxHome">
                         <img src="{{ asset('img/adult-back-view.jpg')}}" alt="">
                         <div class="boxContent">                                   
-                            <h2 class="boxTitle" style="color:white">Our Portfolio</h2>
-                            <p><a href="#" class="btn btn-outline-light"><i class="fa fa-chevron-right" aria-hidden="true"></i> Learn More</a></p>
+                            <h2 class="boxTitle" style="color:white">Our Success</h2>
+                            <p><a href="{{ route('portfolio') }}" class="btn btn-outline-light"><i class="fa fa-chevron-right" aria-hidden="true"></i> Learn More</a></p>
                         </div>
                     </div>
                 </div>
-        <div class="col-6 my-auto mx-auto">
+        <div class="col-lg-6 my-auto col-md-12 col-sm-12 col-12">
         <div id="accordion">
                 <div class="card">
                   <div class="card-header" id="headingOne">

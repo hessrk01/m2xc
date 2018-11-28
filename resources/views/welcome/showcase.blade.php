@@ -2,34 +2,25 @@
 {{-- showcase --}}
 
 <section id="showcase" class="showcase">
-    <div id="particles-js">
-        <div class="absolute-wrapper">
-            {{-- <div class="col-lg-6 text-center "> --}}
-                    <img src="{{asset('img/mshadow_a.png')}}" class="img-fluid d-none d-lg-block"></i>
-            {{-- </div> --}}
-            <h2 class="title">More than <br> <span class="element"> </span></h2>
-            <div id="skills">
-                <p>Project Management</p>
-                <p>Application Configuration</p>
-                <p>Process Analysis</p>
-                <p>Process Redesign</p>
-                <p>Custom Development</p>
-            </div>
-            <h3 class="tagline"><p><span class="element2"></span></p></h3>
-            <div id="goals">
-                <p><font color="white">We <Strong>identify challenges.</font></strong></p>
-                <p><font color="white">We <Strong>anticipate needs.</font></strong></p>
-                <p><font color="white">We <Strong>create solutions.</font></strong></p>
-                <p><font color="white">We <Strong>build teams.</font></strong></p>
-                <p><font color="white">We <Strong>see the unseen.</font></strong></p>
-                <p><font color="white">We <Strong>embrace the situation.</font></strong></p>
-                <p><font color="white">We <Strong>drive success.</font></strong></p>
-                <p><font color="white">We <Strong>share knowledge.</font></strong></p>
-            </div>
        
-        </div>
+    <div id="particles-js">
+        <img src="{{ asset('img/mshadow_a.png') }}" id="shadow">
+        <h1 id="showcaseStart">More <br> than</h1>
+        <h1 id="showcaseSkill">{!! getShowcaseSkill() !!}</h1>
+        
+        <p><span id="showcaseGoalStart">We </span><span id="showcaseGoal" class="element"></span></p>
+            <div id="goals">
+                <p><Strong>identify challenges.</strong></p>
+                <p><Strong>anticipate needs.</strong></p>
+                <p><Strong>create solutions.</strong></p>
+                <p><Strong>build teams.</strong></p>
+                <p><Strong>see the unseen.</strong></p>
+                <p><Strong>embrace the situation.</strong></p>
+                <p><Strong>drive success.</strong></p>
+                <p><Strong>share knowledge.</strong></p>
+            </div>
+    
+    <a href="#" id="showcaseButton" class="btn btn-primary">Learn More</a>   
     </div>
-    <div class="home">
-                
-    </div>
+    
 </section>

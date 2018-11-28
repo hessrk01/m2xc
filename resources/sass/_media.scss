@@ -1,0 +1,21 @@
+
+@media only screen and (max-width: 415px) {
+
+  .navtitle {
+    display: none;
+  } 
+  
+  }
+  
+@media only screen and (max-width: 575px) {
+  .boxHome {
+
+    display: none;
+  }
+
+  
+  .boxContent .boxTitle {
+    display: none;
+  }
+
+}

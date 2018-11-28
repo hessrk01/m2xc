@@ -6,7 +6,7 @@
                     <div class="col-lg-6 col-sm-6 col-12">
                         <div class="fw-info footer-widget">
                             <div class="flogo">
-                                <img src="{{ asset('img/icon_transparent.png')}}" alt="">
+                                <img src="{{ asset('img/mslant.png')}}" alt="">
                             </div>
                             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi eius cumque incidunt. Ratione, debitis.</p>
                             <div class="address">
