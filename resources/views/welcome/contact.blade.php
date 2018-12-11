@@ -1,7 +1,8 @@
 {{-- contact --}}
 <section id="connect" class="section">
-        <div class="row justify-content-md-center">
-                <div class="col-lg-5 col-md-10 col-sm-12 col-12">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 col-12">
                     <div class="section-title">
                             <h3>How to get us</h3>
                             {{-- <h2>{{ config('app.title', 'Managing to Excellence') }}</h2> --}}
@@ -9,13 +10,13 @@
                     </div>
                 </div>
         </div>
-<div class="contact-details-area">
+        <div class="contact-details-area">
 
             <div class="row">
                 <div class="col-12">
                     <div class="all-contact-details">
-                        <div class="row justify-content-md-center">
-                            <div class="col-lg-3 col-sm-3 col-12">
+                        <div class="row justify-content-sm-center">
+                            <div class="col-lg-3 col-12">
                                 <div class="single-contact-details">
                                     <div class="icon">
                                         <span class="fal fa-map-marker-alt"></span>
@@ -26,7 +27,7 @@
                                     <a class="link" href="https://goo.gl/maps/BRS8XQ7PhFF2" target="_blank">Directions</a>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-3 col-12">
+                            <div class="col-lg-3  col-12">
                                 <div class="single-contact-details">
                                     <div class="icon">
                                         <span class="fal fa-envelope"></span>
@@ -41,13 +42,14 @@
                     </div>
                 </div>
             </div>
-        
+        </div>
     </div>
+
     <!-- contact-details-area-end -->
     <!-- map-start -->
     
     <div class="map-container">
-        <div class="row">
+        <div class="row d-none d-md-block">
                 <div class="col-8 mx-auto">
                 <div id="map_container"></div>
                 <div id="map"></div>
