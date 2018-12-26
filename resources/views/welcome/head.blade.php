@@ -9,7 +9,7 @@
     <title>{{ config('app.title', 'Managing to Excellence') }}</title>
 
     {{-- scripts --}}
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/welcome.js') }}" defer></script>
     
 
     <!-- Fonts -->
@@ -18,4 +18,4 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
