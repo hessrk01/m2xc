@@ -6,8 +6,15 @@
 @import 'variables';
 @import 'universal';
 @import 'header';
-
-
+@import 'body';
+// @import 'sidebar';
+@import 'showcase';
+@import 'agencycontent';
+@import 'contact';
+@import 'sections';
+@import 'particles-js';
+@import 'footer';
+@import 'media';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

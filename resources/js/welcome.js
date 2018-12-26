@@ -21,3 +21,34 @@ require('./bootstrap');
 //     el: '#app'
 // });
 
+/**
+ * Particles
+ */
+
+particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('particles.js loaded - callback');
+  });
+
+/**
+ * Typed
+ */
+
+try {
+  window.Typed = require('typed.js');
+
+
+  var goals = new Typed('.element', {
+    stringsElement: '#goals',
+    shuffle: true,
+    typeSpeed: 100,
+    // backSpeed: 0,
+    backDelay: 2000,
+    smartBackspace: false,
+    loop: true,
+    cursorChar: '<',
+  });
+}
+catch(e) {
+
+}
+

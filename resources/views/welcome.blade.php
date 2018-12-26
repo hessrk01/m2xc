@@ -3,7 +3,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 
-@include('inc.head')
+@include('welcome.head')
 
 </head>
 
