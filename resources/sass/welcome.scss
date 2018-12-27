@@ -5,16 +5,16 @@
 // Variables
 @import 'variables';
 @import 'universal';
-@import 'header';
-@import 'body';
+@import 'welcome/header';
+@import 'welcome/body';
 // @import 'sidebar';
-@import 'showcase';
-@import 'agencycontent';
-@import 'contact';
-@import 'sections';
-@import 'particles-js';
-@import 'footer';
-@import 'media';
+@import 'welcome/showcase';
+@import 'welcome/agencycontent';
+@import 'welcome/contact';
+@import 'welcome/sections';
+@import 'welcome/particles-js';
+@import 'welcome/footer';
+@import 'welcome/media';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

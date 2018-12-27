@@ -18,5 +18,8 @@ Route::get('/success', 'WelcomeController@portfolio')->name('portfolio');
 
 Auth::routes();
 
+Route::get('auth/linkedin', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/linkedin/callback', 'Auth\LoginController@handleProviderCallback');
+
 Route::get('/home', 'HomeController@index')->name('home');
 

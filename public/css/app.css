@@ -16,6 +16,11 @@
   font-size: 1.2rem;
 }
 
+.section {
+  padding-top: 105px;
+  width: 98vw;
+}
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
