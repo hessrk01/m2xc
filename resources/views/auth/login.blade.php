@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="section">
-    <div class="container d-flex flex-column justify-content-center">
-        <div class="shadow-lg p-5 m-5 bg-white rounded">
+<div class="section container">
+    <div class="row justify-content-center d-flex">
+        <div class="col-6  shadow-lg p-5 m-5 bg-white rounded">
             <h2><div class="pb-2">{{ __('Login') }}</div></h2>
             <form method="POST" action="{{ route('login') }}">
             @csrf
@@ -45,12 +45,20 @@
                         <button type="submit" class="btn btn-primary ">
                             {{ __('Login') }}
                         </button>
-                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                        {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </form>
+
+            {{-- <div class="d-flex  flex-column">
+                <h5 class="text-center">Or</h5>
+                <a href="#" class="btn">
+                    <img src={{ asset('img/login/badges/LinkedIn-Sign-In-Large---Default.png')}} class="linkedinImage"/>
+                </a>    
+                
+            </div> --}}
         </div>
     </div>
 </div>

@@ -16,8 +16,13 @@
   font-size: 1.2rem;
 }
 
+.linkedinImage {
+  max-width: 65%;
+  height: auto;
+}
+
 .section {
-  padding-top: 105px;
+  padding-top: 75px;
   width: 98vw;
 }
 

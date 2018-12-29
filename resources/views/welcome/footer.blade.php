@@ -21,42 +21,6 @@
                             </ul>
                         </div>
                     </div>
-
-
-                    <div class="col-lg-6 col-sm-6 col-12">
-                        <div class="fw-rpost footer-widget">
-                            <h4 class="title">Recent Posts</h4>
-                            <ul class="rpost">
-                                <li><a href="21_blog-details.html">
-                                    <span class="img">
-                                        <img src="img/home1/recent-1.jpg" alt="">
-                                    </span>
-                                    <span class="content">
-                                        <span class="name">Set Goals And Make Them Possible</span>
-                                        <span class="date"><span><i class="far fa-clock"></i></span> Feb 24, 2018</span>
-                                    </span>
-                                </a></li>
-                                <li><a href="21_blog-details.html">
-                                    <span class="img">
-                                        <img src="img/home1/recent-2.jpg" alt="">
-                                    </span>
-                                    <span class="content">
-                                        <span class="name">Keep Exploring Every Part Of The World</span>
-                                        <span class="date"><span><i class="far fa-clock"></i></span> Mar 19, 2018</span>
-                                    </span>
-                                </a></li>
-                                <li><a href="21_blog-details.html">
-                                    <span class="img">
-                                        <img src="img/home1/recent-3.jpg" alt="">
-                                    </span>
-                                    <span class="content">
-                                        <span class="name">Modern City With Amazing Dark Blue Sea</span>
-                                        <span class="date"><span><i class="far fa-clock"></i></span> May 07, 2018</span>
-                                    </span>
-                                </a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -72,6 +36,11 @@
                         <div class="fba-right">
                             <p>Design & Developer - M2xc</p>
                         </div>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col fba-right">
+                        <p>Employee <a href="{{route('login')}}">Login</a></p>
                     </div>
                 </div>
             </div>
