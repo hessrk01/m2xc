@@ -22,9 +22,14 @@
                             <a href="#hive" class="nav-item nav-link">Hive</a>
                             <a href="#connect" class="nav-item nav-link">Connect</a>
                             
+                            @include('inc.navauth')
+
                         @else
 
                             <a href=" {{ route('welcome') }} " class="nav-item nav-link">Home</a>
+                            
+                            @include('inc.navauth')
+                        
                         @endif
                         </div>
                 </div>

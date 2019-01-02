@@ -61,6 +61,12 @@
             </div> --}}
         </div>
     </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href= {{ route('register') }}><h5>Register</h5></a>
+        </div>
+    </div>
+    
 </div>
 
 

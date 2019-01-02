@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -22,6 +25,15 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
+
+    /**
+     * Only admitted users are credentialed.
+     */
+    protected function credentials(Request $request) {
+        
+        return array_merge($request->only($this->username(), 'password'), ['admitted' => 1]);
+    }
+
 
     /**
      * Where to redirect users after login.
