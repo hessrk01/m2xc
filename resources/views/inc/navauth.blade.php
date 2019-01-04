@@ -1,6 +1,6 @@
 @auth
 
-@if ( Route::is('home') )
+@if ( Route::current()->getName() != ('welcome') )
     <a href="{{route('user.index')}}" class="nav-item nav-link">Users</a>
     <a href="#" class="nav-item nav-link">Articles</a>
 @endif
