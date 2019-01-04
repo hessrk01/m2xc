@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        'App\Console\Commands\DeleteOldUserNotAdmitted',
     ];
 
     /**
@@ -26,6 +26,10 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+        $schedule->command('m2xc:dltnonusers')
+                        ->everyMinute();
+                    // ->dailyAt('14:53');
+       
     }
 
     /**
