@@ -8,10 +8,10 @@
         <table class="table table-borderless table-hover">
             <thead>
                 <tr>
-                    <th scope="col">Name</th>
+                    <th scope="col">@sortablelink('name')</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Admitted</th>
-                    <th scope="col">Created</th>
+                    <th scope="col">@sortablelink('admitted')</th>
+                    <th scope="col">@sortablelink('created_at', 'Created')</th>
                 </tr>
             </thead>
 
@@ -25,7 +25,7 @@
                             <input type="checkbox" class="switchToggle" value="0" data-id="{{$user->id}}" {{$user->admitted?'checked': ''}}/>
                             <span class="slider round"></span>
                         </label></td>
-                    <td scope="row">{{$user->created_at}}</td>
+                    <td scope="row">{{$user->created_at->diffForHumans()}}</td>
                     <td scope="row "><a href="#"><i class="fal fa-eye"></i></a></td>
                 </tr>
             </tbody>
@@ -33,6 +33,7 @@
             @endforeach
         </table>
 
+        {!! $users->appends(\Request::except('page'))->render() !!}
     </div>
 
 @endsection
@@ -51,22 +52,7 @@
             }).done(function(data) {
                     console.log(data);
             });
-            // $.post("/change")
-            // if(this.checked) {
-            //     alert($(this).attr("data-id"));
-            // } else {
-            //     alert ("changed back");
-            // }
         });
-
-        // $(".switchToggle").on("change", function() {
-        //     var taskId = $(this).attr("data-id"); // gets task ID of clicked checkbox
-        //     var state = $(this).is(':checked'); // gets if checkbox is checked or not
-        //     alert(taskId);
-        // //$.post("/changestatustask", {'idTask':taskId, 'checkboxStatus':state}, function() {
-        //     // you can add some code here in response to ajax request
-        // //);
-        // });
     </script>
 
 @endpush

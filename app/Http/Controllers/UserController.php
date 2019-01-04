@@ -31,9 +31,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::all();
+        $users = User::sortable()
+                        ->paginate(10);
         return view('admin.user.index', compact('users'));
     }
 
