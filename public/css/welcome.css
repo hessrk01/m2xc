@@ -44,7 +44,7 @@ img {
 
 .showcase {
   height: 760px;
-  width: 98vw;
+  width: 95vw;
   margin-bottom: 100px;
 }
 
@@ -55,6 +55,7 @@ img {
   height: 550px;
   top: 175px;
   left: 20px;
+  border-radius: 0;
   position: absolute;
 }
 
@@ -373,14 +374,14 @@ img {
 }
 
 #particles-js {
-  width: 95vw;
-  height: 90vh;
+  height: 760px;
   background-repeat: no-repeat;
 }
 
 .footer-top-area {
   background: #303030 none repeat scroll 0 0;
   padding: 59px 0 31px;
+  width: 99vw;
 }
 
 .footer-widget {
@@ -581,6 +582,7 @@ img {
 .footer-bottom-area {
   background: #222222 none repeat scroll 0 0;
   padding: 16px 0;
+  width: 99vw;
 }
 
 .fba-left p {

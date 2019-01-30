@@ -1,0 +1,16 @@
+
+.flash-right{
+    position: absolute;
+    top: 80px;
+    right: 40px; 
+}
+
+.flash{
+    display: flex;  
+    z-index: 10;
+}
+
+.alert-important .close{
+    padding-left: 20px; 
+    text-align: end;  
+}

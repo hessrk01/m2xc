@@ -11,7 +11,20 @@
             @include('inc.nav')
     </div>
 
+    <div class="flash-right">
+        @include('flash::message')
+    </div>
+
     @yield('content')
     @stack('script')
+
+    <script>
+        $('div.alert-info').not('.alert-important').delay(3000).fadeOut(350);
+        $('div.alert-success').not('.alert-important').delay(3000).fadeOut(350);
+        $('div.alert-warning').not('.alert-important').delay(4000).fadeOut(350);
+        $('div.alert-error').not('.alert-important').delay(5000).fadeOut(350);
+        $('div.alert-danger').not('.alert-important').delay(5000).fadeOut(350);
+        
+    </script>
 </body>
 </html>

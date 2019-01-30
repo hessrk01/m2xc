@@ -6,7 +6,7 @@
                     <div class="section-title">
                             <h3>How to get us</h3>
                             {{-- <h2>{{ config('app.title', 'Managing to Excellence') }}</h2> --}}
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod praesentium ab natus dicta non enim tenetur, debitis cum quo velit ratione expedita quas unde provident quisquam illum reiciendis animi!</p>
+                            <p>While we are typically at a customer's place of business, we are always available via phone or email. If you wish to visit, please make an appointment first.</p>
                     </div>
                 </div>
         </div>
@@ -32,12 +32,23 @@
                                     <div class="icon">
                                         <span class="fal fa-envelope"></span>
                                     </div>
-                                    <h4 class="title">Email Address</h4>
-                                    <a class="desc" href="mailto:info@m2xc.com">Info@M2xc.com</a>
-                                    <a class="desc" href="tel:+1-512-555-5555">Phone: +1-512-555-5555</a>
-                                    <a class="link" href="mailto:info@m2xc.com" target="_blank">Send a Message</a>
+                                    <h4 class="title">Mailing Address</h4>
+                                    <p class="desc">3100 Independence Pkwy, Suite 311</p>
+                                    <p class="desc">Plano, Texas 75075</p>
+                                    <a class="link" href="tel:+1-972-292-8172">Phone: +1 972.292.8172 </a>
                                 </div>
                             </div>
+                            <div class="col-lg-3  col-12">
+                                <div class="single-contact-details">
+                                    <div class="icon">
+                                        <span class="fal fa-at"></span>
+                                    </div>
+                                    <h4 class="title">Email Address</h4>
+                                    <a class="desc" href="mailto:mail@m2xc.com">mail@M2xc.com</a>
+                                    <p class="desc">&nbsp</p>
+                                    <a class="link" href="mailto:mail@m2xc.com" target="_blank">Send a Message</a>
+                                </div>
+                            </div>                            
                         </div>
                     </div>
                 </div>

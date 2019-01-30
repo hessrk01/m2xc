@@ -7,7 +7,8 @@
                 <div class="section-title">
                         <h3>What we are about</h3>
                     
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quod praesentium ab natus dicta non enim tenetur, debitis cum quo velit ratione expedita quas unde provident quisquam illum reiciendis animi!</p>
+                        <p>Local Government and Small/Mid Sized business do not lack in complexity – they just do not have excess people and time to properly manage major initiatives and projects that are critical to their success.  Our experience has found that through engaging our services early in the process we can significantly reduce project over-runs and increase the likelihood of success.
+                           </p>
                 </div>
             </div>
         </div>
@@ -20,7 +21,7 @@
                                 <div class="icon">
                                     <span class="fal fa-cogs"></span>
                                 </div>
-                                <h6 class="name">Lorem ipsum</h6>
+                                <h6 class="name">Process</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -28,7 +29,7 @@
                                 <div class="icon">
                                     <span class="fal fa-broadcast-tower"></span>
                                 </div>
-                                <h6 class="name">dolor sit</h6>
+                                <h6 class="name">Implement</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -36,7 +37,7 @@
                                 <div class="icon">
                                     <span class="fal fa-piggy-bank"></span>
                                 </div>
-                                <h6 class="name">amet consectetur</h6>
+                                <h6 class="name">Effective</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -44,7 +45,7 @@
                                 <div class="icon">
                                     <span class="fal fa-puzzle-piece"></span>
                                 </div>
-                                <h6 class="name">adipisicing elit</h6>
+                                <h6 class="name">Configure</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -52,7 +53,7 @@
                                 <div class="icon">
                                     <span class="fal fa-folder"></span>
                                 </div>
-                                <h6 class="name">Deleniti et</h6>
+                                <h6 class="name">Manage</h6>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-6 col-12">
@@ -60,7 +61,7 @@
                                 <div class="icon">
                                     <span class="fal fa-megaphone"></span>
                                 </div>
-                                <h6 class="name">Iure dicta</h6>
+                                <h6 class="name">Advocate</h6>
                             </div>
                         </div>
                     </div>

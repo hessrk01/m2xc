@@ -8,7 +8,7 @@
                 <div class="section-title">
                         <h3>Who we are</h3>
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, nesciunt.</p>
+                        <p>We really have more people than this, they are afraid to submit a picture.</p>
                 </div>
             </div>
         </div>

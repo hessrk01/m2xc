@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\UserRequest;
 use App\User;
 
 class UserController extends Controller
@@ -24,6 +24,18 @@ class UserController extends Controller
             $user->save();
         }
     }
+
+    public function admin(Request $request) 
+    {
+        $userID = $request->data['id'];
+        $user = User::find($request->data['id']);
+
+        if($user) {
+            $user->admin = $request->data['value'];
+            $user->save();
+        }
+    }
+
 
 
     /**
@@ -67,7 +79,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+        return view('admin.user.show', compact('user'));
     }
 
     /**
@@ -76,9 +89,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $user)
     {
         //
+        return view('admin.user.edit', compact('user'));
     }
 
     /**
@@ -88,9 +102,16 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, $id)
     {
         //
+        $validateMe=($request->validated());
+        // session()->flash('message', 'Update completed');
+        flash('action complete')->error();
+        flash('something else');
+        flash('third')->success()->important();
+        flash()->overlay('Modal Message', 'Modal Title');
+        return redirect(route('user.index'));
     }
 
     /**
