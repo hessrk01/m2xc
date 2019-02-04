@@ -17,6 +17,7 @@
         </div>
     @endif
 </div>
+@can('adminview', $user)
 <div class="form-group">
     <label for="admitted">Admitted</label>
     <label class="switch">
@@ -31,6 +32,7 @@
         <span class="slider round"></span>
     </label>
 </div>
+@endcan
 <div class = "form-group">
     <button type="submit" class="btn btn-outline-primary btn-lg"> {{ $buttonText }}</button>
 </div>

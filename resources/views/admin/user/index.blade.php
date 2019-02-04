@@ -25,17 +25,32 @@
                             <td scope="row">{{$user->name}}</td>
                             <td scope="row">{{$user->email}}</td>
                             <td scope="row">
+                                @can('adminview', $user)
                                 <label class="switch">
                                     <input type="checkbox" class="switchToggle" value="0" data-attr="admit" data-id="{{$user->id}}" {{$user->admitted?'checked': ''}}/>
                                     <span class="slider round"></span>
-                                </label></td>
+                                </label>
+                                @endcan
+                            </td>
                             <td scope="row">
-                                <label class="switch">
-                                    <input type="checkbox" class="switchToggle" value="0" data-attr="admin" data-id="{{$user->id}}" {{$user->admin?'checked': ''}}/>
-                                    <span class="slider round"></span>
-                                </label></td>
+                                @can('adminview', $user)
+                                    <label class="switch">
+                                        <input type="checkbox" class="switchToggle" value="0" data-attr="admin" data-id="{{$user->id}}" {{$user->admin?'checked': ''}}/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                @endcan
+                            </td>
                             <td scope="row">{{$user->created_at->diffForHumans()}}</td>
-                            <td scope="row"><a href="{{ route('user.edit', $user->id)}}" class="btn btn-primary">Edit</a></td>
+                            <td 
+                            
+                                @can('view', $user)
+                                scope="row"><a href="{{ route('user.edit', $user->id)}}" class="btn btn-primary">Edit</a>
+                                @endcan
+                                @can('view', $user)
+                                <a href="{{ route('password.edit', $user->id) }}" class="btn btn-secondary">Change Password</a>
+                                @endcan
+                            </td>
+                            
                         </tr>
                     </tbody>
                         
@@ -44,7 +59,6 @@
                 {!! $users->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
-        {{ session('message')}}
     </div>
 
 @endsection

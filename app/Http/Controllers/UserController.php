@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Http\Requests\UserRequest;
+
+
+use Illuminate\Support\Facades\Auth;
 use App\User;
 
 class UserController extends Controller
@@ -107,10 +111,7 @@ class UserController extends Controller
         //
         $validateMe=($request->validated());
         // session()->flash('message', 'Update completed');
-        flash('action complete')->error();
-        flash('something else');
-        flash('third')->success()->important();
-        flash()->overlay('Modal Message', 'Modal Title');
+        flash('User record updated')->success();
         return redirect(route('user.index'));
     }
 

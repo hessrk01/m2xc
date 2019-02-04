@@ -8,12 +8,8 @@
                             <div class="flogo">
                                 <img src="{{ asset('img/mslant.png')}}" alt="">
                             </div>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sequi eius cumque incidunt. Ratione, debitis.</p>
-                            <div class="address">
-                                <h5><span><i class="fas fa-map-marker-alt"></i></span> Address:</h5>
-                                <p>400 North St. Paul, Suite 1050,
-                                    <br>Dallas, TX 75201, United States</p>
-                            </div>
+                            <p class="text">Managing to Excellence - redefining expectations</p>
+                            <h3 class="text-light">Follow Us</h3>
                             <ul class="social">
                                 <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -29,7 +25,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 col-12">
                         <div class="fba-left">
-                            <p><a href="#">M2xc</a> © 2018. All Rights Reserved.</p>
+                            <p><a href="#">M2xc</a> © {{ date('Y')}}. All Rights Reserved.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-12">

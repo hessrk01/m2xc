@@ -24,7 +24,7 @@
                                 <p><Strong>share knowledge.</strong></p>
                             </div>
                 
-                        <a href="#" id="showcaseButton" class="btn btn-primary">Learn More</a>   
+                        <a href="#services" id="showcaseButton" class="btn btn-primary">Learn More</a>   
                     </div>
                 </div>
             </div>
