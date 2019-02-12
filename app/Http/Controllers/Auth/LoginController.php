@@ -33,7 +33,15 @@ class LoginController extends Controller
         
         return array_merge($request->only($this->username(), 'password'), ['admitted' => 1]);
     }
-
+    
+    protected function authenticated(Request $request, $user)
+    {
+        if($user->past_login_success == false)
+        {
+            $user->past_login_success = true;
+            $user->save();
+        }
+    }
 
     /**
      * Where to redirect users after login.

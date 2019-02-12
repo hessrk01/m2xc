@@ -41,6 +41,7 @@ class DeleteOldUserNotAdmitted extends Command
     {
         $numberDeleted = User::whereDate('created_at', '<', Carbon::now()->subDays(7))
                         ->where('admitted', '=', '0')
+                        ->where('past_login_success', '=', '0')
                         ->delete();
         echo "$numberDeleted user records NOT admitted older than 7 days were deleted.\n";
     }
