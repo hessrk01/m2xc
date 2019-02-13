@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::sortable()
+                        ->paginate(10);
+        
+        return view('admin.article.index', compact('articles'));
     }
 
     /**

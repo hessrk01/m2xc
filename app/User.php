@@ -37,9 +37,9 @@ class User extends Authenticatable
         return $user->admin;
     }
 
-    public function articles()
-    {
-        return $this->hasMany('Articles::class');
-    }
+    // public function articles()
+    // {
+    //     return $this->hasMany('Articles::class');
+    // }
     
 }

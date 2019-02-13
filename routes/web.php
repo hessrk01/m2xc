@@ -23,6 +23,8 @@ Route::get('auth/linkedin/callback', 'Auth\LoginController@handleProviderCallbac
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('admin/article', 'ArticleController');
+
 Route::resource('admin/user', 'UserController');
 Route::put('admin/admituser', 'UserController@admit');
 Route::put('admin/adminuser', 'UserController@admin');

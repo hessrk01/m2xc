@@ -19,6 +19,7 @@ class CreateArticlesTable extends Migration
             $table->string('description');
             $table->string('url');
             $table->boolean('display')->default(false);
+            $table->string('author');
             $table->date('published_date');
             $table->timestamps();
         });

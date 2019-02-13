@@ -2,7 +2,7 @@
 
 @if ( Route::current()->getName() != ('welcome') )
     <a href="{{route('user.index')}}" class="nav-item nav-link">Users</a>
-    <a href="#" class="nav-item nav-link">Articles</a>
+    <a href="{{route('article.index')}}" class="nav-item nav-link">Articles</a>
 @endif
 <ul class="navbar-nav ml-auto">
     <li class="nav-item dropdown">
