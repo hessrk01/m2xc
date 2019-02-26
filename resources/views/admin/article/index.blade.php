@@ -23,7 +23,7 @@
                             <td scope="row">{{str_limit($article->url, 25)}}</td>
                             <td scope="row">
                                 <label class="switch">
-                                    <input type="checkbox" class="switchToggle" value="0" data-attr="admit" data-id="{{$article->id}}" {{$article->display?'checked': ''}}/>
+                                    <input type="checkbox" class="switchToggle" value="0" data-attr="display" data-id="{{$article->id}}" {{$article->display?'checked': ''}}/>
                                     <span class="slider round"></span>
                                 </label>
                             </td>
@@ -37,6 +37,7 @@
                     </tbody>
                     @endforeach
                 </table>
+                {!! $articles->appends(\Request::except('page'))->render() !!}
             </div>
         </div>
     </div>
@@ -53,11 +54,8 @@
             console.log(data);
             var url;
             switch(data.attr){
-                case "admin":
-                    url = "/admin/adminuser";
-                    break;
-                case "admit":
-                    url = "/admin/admituser";
+                case "display":
+                    url = "/admin/changedisplay";
                     break;
             }
             $.ajax({

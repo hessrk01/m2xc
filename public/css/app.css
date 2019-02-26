@@ -25,6 +25,14 @@
   color: #888888;
 }
 
+.hive-background {
+  background-image: url("/img/mosaicStrip.png");
+  background-color: #f8fafc;
+  background-repeat: no-repeat;
+  background-position: right 1%;
+  background-size: cover;
+}
+
 .table.borderless-top th {
   border-top: none;
 }
@@ -99,6 +107,10 @@ input:checked + .slider:before {
 .section {
   padding-top: 75px;
   width: 98vw;
+}
+
+.special {
+  opacity: 0.6;
 }
 
 /*!

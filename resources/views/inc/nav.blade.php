@@ -23,7 +23,7 @@
                                 <a href="#about" class="nav-item nav-link">About</a>
                                 <a href="#services" class="nav-item nav-link">Services</a>
                                 {{-- <a href="#team" class="nav-item nav-link">Team</a> --}}
-                                <a href="#hive" class="nav-item nav-link">Hive</a>
+                                <a href="{{ route('hive.index') }}" class="nav-item nav-link">Hive</a>
                                 <a href="#connect" class="nav-item nav-link">Connect</a>
                                 
                                 @include('inc.navauth')
@@ -36,7 +36,7 @@
                                 <a href="{{ route('welcome')}}/#about" class="nav-item nav-link">About</a>
                                 <a href="{{ route('welcome')}}/#services" class="nav-item nav-link">Services</a>
                                 {{-- <a href="{{ route('welcome')}}/#team" class="nav-item nav-link">Team</a> --}}
-                                <a href="{{ route('welcome')}}/#hive" class="nav-item nav-link">Hive</a>
+                                <a href="{{ route('hive.index') }}" class="nav-item nav-link">Hive</a>
                                 <a href="{{ route('welcome')}}/#connect" class="nav-item nav-link">Connect</a>
                                 
                                 @include('inc.navauth')

@@ -52,3 +52,4 @@ catch(e) {
 
 }
 
+require('./slick.min.js');

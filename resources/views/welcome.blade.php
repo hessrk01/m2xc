@@ -22,7 +22,7 @@
         <script src="{{ asset('js/particles.js') }}" ></script>
         <script src="{{ asset('js/scroll.js') }}" defer ></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlr5SMphZfkmH1hxEphdmto-XzRNl1j9o&callback=initializeMap"
-  type="text/javascript"></script>
+                type="text/javascript"></script>
         <script src="{{ asset('js/map.js') }}"  ></script>
         
     

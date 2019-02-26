@@ -1,9 +1,10 @@
 @auth
 
-@if ( Route::current()->getName() != ('welcome') )
+{{-- @if ( Route::current()->getName() != ('welcome') ) --}}
     <a href="{{route('user.index')}}" class="nav-item nav-link">Users</a>
-    <a href="{{route('article.index')}}" class="nav-item nav-link">Articles</a>
-@endif
+    {{-- <a href="{{route('article.index')}}" class="nav-item nav-link">Articles</a> --}}
+    <a href="{{route('post.index')}}" class="nav-item nav-link">Posts</a>
+{{-- @endif --}}
 <ul class="navbar-nav ml-auto">
     <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

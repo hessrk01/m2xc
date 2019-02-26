@@ -9,6 +9,10 @@
                                 <img src="{{ asset('img/mslant.png')}}" alt="">
                             </div>
                             <p class="text">Managing to Excellence - redefining expectations</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12 text-center">
+                        <div class="fw-info footer-widget">
                             <h3 class="text-light">Follow Us</h3>
                             <ul class="social">
                                 <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>

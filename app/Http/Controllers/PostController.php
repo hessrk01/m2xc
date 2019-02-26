@@ -2,28 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Article;
+use App\Post;
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller
+
+class PostController extends Controller
 {
-
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
-
-    public function changeDisplay(Request $request)
-    {
-        $article = Article::find($request->data['id']);
-        if($article) {
-            $article->display = $request->data['value'];
-            $article->save();
-        }
-    }
-
-
-
     /**
      * Display a listing of the resource.
      *
@@ -31,10 +15,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::sortable()
-                        ->paginate(10);
-        
-        return view('admin.article.index', compact('articles'));
+        $posts = Post::get();
+        return view('admin.post.index', compact('posts'));
     }
 
     /**
@@ -44,7 +26,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.post.create');
     }
 
     /**
@@ -55,27 +37,35 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Post::create([
+            'title' => request('title'),
+            'body' => request('body'),
+            'slug' => str_slug(request('title')),
+            'author' => request('author'),
+        ]); 
+
+        flash('Post recorded')->success();
+        return redirect()->route('post.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Article  $article
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Article $article)
+    public function show($id)
     {
-        //
+
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Article  $article
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Article $article)
+    public function edit($id)
     {
         //
     }
@@ -84,10 +74,10 @@ class ArticleController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Article  $article
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -95,10 +85,10 @@ class ArticleController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Article  $article
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+    public function destroy($id)
     {
         //
     }

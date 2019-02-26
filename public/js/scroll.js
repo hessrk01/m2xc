@@ -5,7 +5,7 @@
 
     //smooth scroll
 
-    $("#main-nav a").on('click', function (event) {
+    $("#main-nav").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 

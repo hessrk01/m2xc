@@ -6,7 +6,7 @@
 
     @include('inc.head')
 </head>
-<body>
+<body class="{{ Request::path() == 'hive' ? 'hive-background' : '' }}">
     <div id="app" class="app">
             @include('inc.nav')
     </div>

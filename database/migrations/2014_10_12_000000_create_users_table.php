@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->boolean('admitted')->default(false);
             $table->boolean('admin')->default(false);
             $table->boolean('past_login_success')->default(false);
-            $table->rememberToken();
+            $table->rememberToken()->default(null);
             $table->timestamps();
         });
     }

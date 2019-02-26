@@ -8,3 +8,14 @@
 .fa-eye {
     color: $grey;
 }
+
+.hive-background {
+  background-image: url("/img/mosaicStrip.png");
+  background-color: #f8fafc;
+  background-repeat: no-repeat;
+  // background-attachment: scroll;
+  background-position: right 1%;
+  background-size: cover;
+  // background-position: right 99%;
+}
+
