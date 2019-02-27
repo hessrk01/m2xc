@@ -8,6 +8,15 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function changePublish(Request $request)
+    {
+        $post = Post::find($request->data['id']);
+        if($post) {
+            $post->publish = $request->data['value'];
+            $post->save();
+        }
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -26,7 +35,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.post.create');
+        $post = new Post;
+        return view('admin.post.create', compact('post'));
     }
 
     /**
@@ -65,9 +75,10 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        // dd($post);
+        return view('admin.post.edit')->with('post', $post);
     }
 
     /**
@@ -77,9 +88,19 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+
+
+        $post->title = $request->title;
+        $post->body = $request->body;
+        $post->slug = str_slug(request('title'));
+        $post->author = request('author');
+
+        $post->save();
+
+        flash('Post updated')->success();
+        return redirect()->route('post.index');
     }
 
     /**
@@ -90,6 +111,10 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
+        Post::find($id)->delete();
+        flash('Post deleted')->success();
+        // return redirect()->route('post.index');
+
     }
 }

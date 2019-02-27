@@ -20,7 +20,7 @@
                      $est = $m . ' minute' . ($m == 1 ? '' : 's'). ', ' . $s . ' second' . ($s == 1 ? '' : 's'); 
                      echo('<h6 class="text-muted">Approximate reading time: ' . $est . '</h6>'); @endphp
             
-            <p> {!! str_limit($post->body, 500) !!}</p>
+            <p> {!! str_limit(strip_tags($post->body), 500) !!}</p>
           </div>
         </div>
 

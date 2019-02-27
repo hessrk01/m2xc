@@ -32,18 +32,16 @@
                             <td scope="row">
                                 @can('adminview', $post)
                                 <label class="switch">
-                                    <input type="checkbox" class="switchToggle" value="0" data-attr="admit" data-id="{{$post->id}}" {{$post->publish?'checked': ''}}/>
+                                    <input type="checkbox" class="switchToggle" value="0" data-attr="publish" data-id="{{$post->id}}" {{$post->publish?'checked': ''}}/>
                                     <span class="slider round"></span>
                                 </label>
                                 @endcan
                             </td>
-                            <td scope="row">{{$post->publish_date->toDateString()}}</td>
+                            <td scope="row">{{$post->display_publish_date}}</td>
                             <td scope="row">{{$post->created_at->diffForHumans()}}</td>
-                            <td scope="row"><a href="{{ route('post.edit', $post->id)}}" class="btn btn-primary">Edit</a>
-                                
-                                
-                                <a href="{{ route('post.edit', $post->id) }}" class="btn btn-secondary">Delete</a>
-                                
+                            <td scope="row"><a href="{{ route('post.edit', $post)}}" class="btn btn-primary">Edit</a>                                
+                                <button class="deletePost btn btn-warning" data-id="{{ $post->id }}" data-token="{{ csrf_token() }}" >Delete</button>
+                                <a href="{{ route('hive.show', $post->slug) }}" class="btn btn-info">Show</a>
                             </td>
                             
                         </tr>
@@ -68,21 +66,47 @@
             console.log(data);
             var url;
             switch(data.attr){
-                case "admin":
-                    url = "/admin/adminuser";
-                    break;
-                case "admit":
-                    url = "/admin/admituser";
+                case "publish":
+                    url = "/admin/post/changePublish";
                     break;
             }
             $.ajax({
-                type: "PUT",
+                method: "PUT",
                 url: url,
                 data: {data, _token: '{{csrf_token()}}' },
             }).done(function(data) {
                     console.log(data);
             });
         });
+    </script>
+
+    <script>
+
+        $('.deletePost').click(function() {
+            var id = $(this).data('id');
+            var token = $(this).data('token');
+            if (confirm('Delete this post?'))
+            {
+                var url = '{{route ('post.index')}}' + '/' + id;
+                $.ajax(
+                {
+                    url: url,
+                    method: 'DELETE',
+                    data: {
+                        'id':id,
+                        '_token': token
+                    },
+                    success: function(data) {
+                        location.reload('{{route('post.index')}}');
+                    }
+                });
+            }
+            else
+            {
+                console.log('not deleted');
+            }
+        });
+
     </script>
 
 @endpush

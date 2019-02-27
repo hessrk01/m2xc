@@ -37,7 +37,9 @@ Route::put('/admin/adminuser', 'UserController@admin');
 Route::get('/admin/password/{user}/edit', 'PasswordController@edit')->name('password.edit'); //->middleware('can:view, user');;
 Route::put('/admin/password/{user}', 'PasswordController@update')->name('password.change');
 
+Route::put('/admin/post/changePublish', 'PostController@changePublish');
 Route::resource('/admin/post', 'PostController');
+
 
 
 
