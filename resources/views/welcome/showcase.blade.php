@@ -26,6 +26,10 @@
                 
                         <a href="#services" id="showcaseButton" class="btn btn-primary">Learn More</a>   
                     </div>
+
+                    <div class="d-none d-md-block" id="hivecar">
+                        This is a test
+                    </div>
                 </div>
             </div>
         </div>

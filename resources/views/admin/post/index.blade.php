@@ -41,7 +41,7 @@
                             <td scope="row">{{$post->created_at->diffForHumans()}}</td>
                             <td scope="row"><a href="{{ route('post.edit', $post)}}" class="btn btn-primary">Edit</a>                                
                                 <button class="deletePost btn btn-warning" data-id="{{ $post->id }}" data-token="{{ csrf_token() }}" >Delete</button>
-                                <a href="{{ route('hive.show', $post->slug) }}" class="btn btn-info">Show</a>
+                                <a href="{{ route('hive.show', $post->slug) }}" target="_blank" class="btn btn-info">Show</a>
                             </td>
                             
                         </tr>
@@ -81,32 +81,48 @@
     </script>
 
     <script>
-
         $('.deletePost').click(function() {
             var id = $(this).data('id');
             var token = $(this).data('token');
-            if (confirm('Delete this post?'))
-            {
-                var url = '{{route ('post.index')}}' + '/' + id;
-                $.ajax(
-                {
-                    url: url,
-                    method: 'DELETE',
-                    data: {
-                        'id':id,
-                        '_token': token
+            bootbox.confirm({
+                message: 'Deleting a post is permanent. Are you sure?',
+                buttons: {
+                    confirm: {
+                        label: 'Delete',
+                        className: 'btn-danger',
                     },
-                    success: function(data) {
-                        location.reload('{{route('post.index')}}');
+                    cancel: {
+                        label: 'Cancel',
                     }
-                });
-            }
-            else
-            {
-                console.log('not deleted');
-            }
+                },
+                callback: function(result) {
+                    console.log('always called' + result);
+                    if(result)
+                    {
+                        var url = '{{route ('post.index')}}' + '/' + id;
+                        $.ajax(
+                        {
+                            url: url,
+                            method: 'DELETE',
+                            data: {
+                                'id':id,
+                                '_token': token
+                            },
+                            success: function(data) {
+                                location.reload('{{route('post.index')}}');
+                            }
+                        });
+                    }
+                }
+            });
         });
 
+    </script>
+
+    <script>
+        $('.bootbox').click(function(){
+            bootbox.confirm("Are you sure?", function(result){ /* your callback code */ })
+        });
     </script>
 
 @endpush

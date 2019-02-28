@@ -33,6 +33,11 @@
   background-size: cover;
 }
 
+.hive-tag {
+  position: absolute;
+  right: 50px;
+}
+
 .table.borderless-top th {
   border-top: none;
 }

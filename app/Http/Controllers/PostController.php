@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 
 class PostController extends Controller
@@ -12,6 +13,15 @@ class PostController extends Controller
     {
         $post = Post::find($request->data['id']);
         if($post) {
+            
+            if($request->data['value'] == 1)
+            {
+                $post->publish_date = Carbon::now();
+            }
+            else{
+                $post->publish_date = null;
+            }
+            // $post->publish_date = Carbon::now();
             $post->publish = $request->data['value'];
             $post->save();
         }
@@ -54,7 +64,7 @@ class PostController extends Controller
             'author' => request('author'),
         ]); 
 
-        flash('Post recorded')->success();
+        flash('Post saved')->success();
         return redirect()->route('post.index');
     }
 
