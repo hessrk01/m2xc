@@ -1,11 +1,11 @@
 
     //init scrollspy
 
-    $('body').scrollspy({target: '#main-nav'});
+    $('body').scrollspy({target: '.nav-scroll'});
 
     //smooth scroll
 
-    $("#main-nav").on('click', function (event) {
+    $(".nav-scroll").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
 

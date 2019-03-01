@@ -7,7 +7,7 @@
                 
                     
                 {{-- <div class="col-6"> --}}
-                    <a href="{{ Request::is('/') ? '#home' : route('welcome')  }}" class="navbar-brand">
+                    <a href="{{ Request::is('/') ? '#home' : route('welcome')  }}" class="nav-scroll navbar-brand">
                         <img src="{{asset('img/mslant.png')}}" width="48"  alt="">
                         <span class="navtitle"><h4 class="d-inline align-middle ml-1">Managing to Excellence</h4></span>
                     </a>
@@ -20,11 +20,11 @@
                         <div class="navbar-nav ml-auto">
                             @if ( Request::is('/') )
                                                         
-                                <a href="#about" class="nav-item nav-link">About</a>
-                                <a href="#services" class="nav-item nav-link">Services</a>
+                                <a href="#about" class="nav-scroll nav-item nav-link">About</a>
+                                <a href="#services" class="nav-scroll nav-item nav-link">Services</a>
                                 {{-- <a href="#team" class="nav-item nav-link">Team</a> --}}
                                 <a href="{{ route('hive.index') }}" class="nav-item nav-link">Hive</a>
-                                <a href="#connect" class="nav-item nav-link">Connect</a>
+                                <a href="#connect" class="nav-scroll nav-item nav-link">Connect</a>
                                 
                                 @include('inc.navauth')
 
