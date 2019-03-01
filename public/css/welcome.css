@@ -42,6 +42,14 @@ img {
           filter: grayscale(100%);
 }
 
+.success-col {
+  border-radius: 25%;
+  height: auto;
+  width: 325px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .showcase {
   height: 760px;
   width: 95vw;
