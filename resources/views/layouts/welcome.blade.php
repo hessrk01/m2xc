@@ -8,10 +8,11 @@
 </head>
 <body>
     <div id="app" class="app">
-            @include('inc.nav')
+        @include('inc.nav')
     </div>
 
     @yield('content')
+    
     
 </body>
 </html>

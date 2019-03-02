@@ -9,7 +9,7 @@
     <title>{{ config('app.title', 'Managing to Excellence') }}</title>
 
     {{-- scripts --}}
-    <script src="{{ asset('js/welcome.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/welcome.js') }}" defer></script> --}}
     
 
     <!-- Fonts -->
@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+    
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />

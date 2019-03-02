@@ -20,6 +20,7 @@
         "vue": "^2.5.22"
     },
     "dependencies": {
+        "slick-carousel": "^1.8.1",
         "typed.js": "^2.0.10"
     }
 }

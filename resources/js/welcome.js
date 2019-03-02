@@ -1,3 +1,4 @@
+
 // 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -8,6 +9,11 @@
 require('./bootstrap');
 
 // window.Vue = require('vue');
+
+// import $ from 'jquery';
+// window.$ = window.jQuery = require('jquery');
+// require('./slick.min.js');
+// // import './js/slick.min.js';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -52,4 +58,4 @@ catch(e) {
 
 }
 
-require('./slick.min.js');
+require('slick-carousel');
