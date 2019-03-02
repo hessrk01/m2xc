@@ -9,6 +9,11 @@ use Carbon\Carbon;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function changePublish(Request $request)
     {
         $post = Post::find($request->data['id']);
@@ -76,7 +81,13 @@ class PostController extends Controller
      */
     public function show($id)
     {
-
+        $post = Post::where('slug', $slug)->first();
+        if ($post)  {
+            return view('hive.show')->with('post', $post);
+        }
+        else {
+            return redirect()->route('post.index');
+        }
     }
 
     /**
