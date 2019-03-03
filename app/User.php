@@ -41,5 +41,10 @@ class User extends Authenticatable
     // {
     //     return $this->hasMany('Articles::class');
     // }
+
+    public function routeNotificationforTeamWebhook($notification)
+    {
+        return env('TEAM_WEBHOOK');
+    }
     
 }
