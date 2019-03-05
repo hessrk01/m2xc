@@ -60,6 +60,7 @@ class TeamWebhookChannel
             'activityTitle' => data_get($message, 'activityTitle'),
             'activityImage' => data_get($message, 'activityImage'),
             'activityText' => data_get($message, 'activityText'),
+            
         ]);
 
         return array_merge([

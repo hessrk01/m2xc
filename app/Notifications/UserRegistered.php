@@ -34,6 +34,7 @@ class UserRegistered extends Notification
         // return ['mail'];
         return [TeamWebhookChannel::class];
         
+        
     }
 
     /**
@@ -72,14 +73,13 @@ class UserRegistered extends Notification
         $message = new TeamMessage();
         // Log::error($notifiable);
         return $message
-            ->summary('A user has registered')
-            ->title('The user is:'.$notifiable->name)
-            ->error()
-            // ->sectionTitle('Title of Section')
-            // ->sectionText('Text of Section')
-            ->activityTitle('Some Activity')
-            ->activityText('Text describing the activity');
-            // ->activityImage('https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/astronaut.png');
+            
+            ->summary('New User registered')
+            ->title('A new user has registered on the M2xc website.')
+            ->info()
+            ->activityTitle('New User Details:')
+            ->activityText('User name: '. $notifiable->name . '<br>Email Address is: ' . $notifiable->email . '<br>Created on: ' . $notifiable->created_at . ' UTC.<br>To admit this user, go to <a href="http://m2xc.com/admin/user" target=\'_blank\'>M2xc.com</a>.<br>If you do not recognize this user, you can choose to do nothing and the system will delete the record in 7 days.')
+            ->activityImage('https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/user_generic_green.png');
 
             
     }

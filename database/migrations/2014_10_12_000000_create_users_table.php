@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->boolean('admitted')->default(false);
             $table->boolean('admin')->default(false);
+            $table->boolean('notify')->default(false);
             $table->boolean('past_login_success')->default(false);
             $table->rememberToken()->default(null);
             $table->timestamps();

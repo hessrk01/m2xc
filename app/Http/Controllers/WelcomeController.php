@@ -23,4 +23,8 @@ class WelcomeController extends Controller
 
         return view('welcome', compact('posts'));
     }
+
+    public function story() {
+        return view('welcome.story');
+    }
 }

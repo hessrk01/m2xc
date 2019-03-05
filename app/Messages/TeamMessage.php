@@ -206,5 +206,4 @@ class TeamMessage
         $this->heroImage = $content;
         return $this;
     }
-
 }

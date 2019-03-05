@@ -26,9 +26,16 @@
     </label>
 </div>
 <div class="form-group">
-    <label for="admitted">Admin</label>
+    <label for="admin">Admin</label>
     <label class="switch">
         <input type="checkbox" name="admin" class="switchToggle" {{$user->admin?'checked': ''}}/>
+        <span class="slider round"></span>
+    </label>
+</div>
+<div class="form-group">
+    <label for="notify">Notify</label>
+    <label class="switch">
+        <input type="checkbox" name="notify" class="switchToggle" {{$user->notify?'checked': ''}}/>
         <span class="slider round"></span>
     </label>
 </div>

@@ -14,6 +14,7 @@
 // welcome area
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/success', 'WelcomeController@portfolio')->name('portfolio');
+Route::get('/story', 'WelcomeController@story')->name('story');
 
 Route::resource('/hive', 'HiveController')->only('index');
 Route::get('/hive/{slug}', 'HiveController@show')->name('hive.show');
@@ -34,14 +35,13 @@ Route::put('/admin/changedisplay', 'ArticleController@changeDisplay');
 Route::resource('/admin/user', 'UserController');
 Route::put('/admin/admituser', 'UserController@admit');
 Route::put('/admin/adminuser', 'UserController@admin');
+Route::put('/admin/notifyuser', 'UserController@notify');
+
 Route::get('/admin/password/{user}/edit', 'PasswordController@edit')->name('password.edit'); //->middleware('can:view, user');;
 Route::put('/admin/password/{user}', 'PasswordController@update')->name('password.change');
 
 Route::put('/admin/post/changePublish', 'PostController@changePublish');
 Route::resource('/admin/post', 'PostController');
-
-
-
 
 //upload content play
 Route::get('/upload', 'UploadController@getUpload')->name('upload');

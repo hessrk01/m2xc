@@ -15,6 +15,7 @@
                             <th scope="col">Email</th>
                             <th scope="col">@sortablelink('admitted')</th>
                             <th scope="col">@sortablelink('admin')</th>
+                            <th scope="col">@sortablelink('notify')</th>
                             <th scope="col">@sortablelink('created_at', 'Created')</th>
                         </tr>
                     </thead>
@@ -36,6 +37,14 @@
                                 @can('adminview', $user)
                                     <label class="switch">
                                         <input type="checkbox" class="switchToggle" value="0" data-attr="admin" data-id="{{$user->id}}" {{$user->admin?'checked': ''}}/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                @endcan
+                            </td>
+                            <td scope="row">
+                                @can('adminview', $user)
+                                    <label class="switch">
+                                        <input type="checkbox" class="switchToggle" value="0" data-attr="notify" data-id="{{$user->id}}" {{$user->notify?'checked': ''}}/>
                                         <span class="slider round"></span>
                                     </label>
                                 @endcan
@@ -78,6 +87,9 @@
                     break;
                 case "admit":
                     url = "/admin/admituser";
+                    break;
+                case "notify":
+                    url = "/admin/notifyuser";
                     break;
             }
             $.ajax({

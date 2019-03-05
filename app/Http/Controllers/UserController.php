@@ -40,7 +40,16 @@ class UserController extends Controller
         }
     }
 
+    public function notify(Request $request)
+    {
+        $userID = $request->data['id'];
+        $user = User::find($request->data['id']);
 
+        if($user) {
+            $user->notify = $request->data['value'];
+            $user->save();
+        }
+    }
 
     /**
      * Display a listing of the resource.
@@ -110,7 +119,16 @@ class UserController extends Controller
     {
         //
         $validateMe=($request->validated());
-        // session()->flash('message', 'Update completed');
+        
+        //dd($request);
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->admitted = ($request->has('admitted')? true : false);
+        $user->admin = ($request->has('admin')? true : false);
+        $user->notify = ($request->has('notify')? true : false);
+        $user->save();
+
         flash('User record updated')->success();
         return redirect(route('user.index'));
     }
