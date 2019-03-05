@@ -72,7 +72,7 @@
                     <img src="{{ asset('img/downtown-dallas.jpg')}}" alt="">
                     <div class="boxContent">                                   
                         <h2 class="boxTitle">The M2xc Story</h2>
-                        <p><a href="#" class="btn btn-outline-dark"><i class="fa fa-chevron-right" aria-hidden="true"></i> Learn More</a></p>
+                        <p><a href="{{route('story')}}" class="btn btn-outline-dark"><i class="fa fa-chevron-right" aria-hidden="true"></i> Learn More</a></p>
                     </div>
                 </div>
             </div>
