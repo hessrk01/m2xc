@@ -40,7 +40,7 @@ class UserController extends Controller
         }
     }
 
-    public function notify(Request $request)
+    public function notifyUser(Request $request)
     {
         $userID = $request->data['id'];
         $user = User::find($request->data['id']);

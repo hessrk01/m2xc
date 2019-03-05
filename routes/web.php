@@ -35,7 +35,7 @@ Route::put('/admin/changedisplay', 'ArticleController@changeDisplay');
 Route::resource('/admin/user', 'UserController');
 Route::put('/admin/admituser', 'UserController@admit');
 Route::put('/admin/adminuser', 'UserController@admin');
-Route::put('/admin/notifyuser', 'UserController@notify');
+Route::put('/admin/notifyuser', 'UserController@notifyUser');
 
 Route::get('/admin/password/{user}/edit', 'PasswordController@edit')->name('password.edit'); //->middleware('can:view, user');;
 Route::put('/admin/password/{user}', 'PasswordController@update')->name('password.change');

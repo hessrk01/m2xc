@@ -11,6 +11,9 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 
+use Mail;
+use App\Mail\UserRegistered as URMail;
+
 class RegisterController extends Controller
 {
     /*
@@ -80,6 +83,15 @@ class RegisterController extends Controller
         $user->save();
 
         $user->notify(new UserRegistered());
+
+        $notifyusers= USER::where('notify', 1)
+                            ->where('admitted', 1)
+                            ->get();
+        
+        foreach ($notifyusers as $notifyuser)
+        {
+        Mail::to($notifyuser)->send(new URMail($user));
+        }
 
         return $user;
 
