@@ -6,7 +6,7 @@
                     <div class="col-lg-6 col-sm-6 col-12">
                         <div class="fw-info footer-widget">
                             <div class="flogo">
-                                <img src="{{ asset('img/mslant.png')}}" alt="">
+                                <img src="{{ asset('img/m2xclogo_white.png')}}" alt="">
                             </div>
                             <p class="text">Managing to Excellence - redefining expectations</p>
                         </div>
