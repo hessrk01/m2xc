@@ -8,8 +8,8 @@
                     
                 {{-- <div class="col-6"> --}}
                     <a href="{{ Request::is('/') ? '#home' : route('welcome')  }}" class="nav-scroll navbar-brand">
-                        <img src="{{asset('img/m2xclogo.png')}}" width="48"  alt="">
-                        <span class="navtitle"><h4 class="d-inline align-middle ml-1">Managing to Excellence</h4></span>
+                        <img src="{{asset('img/m2xclogo.png')}}" class="navlogo"  alt="">
+                        <span class="navtitle"><h4 class="d-inline align-middle ml-3">Managing to Excellence</h4></span>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
