@@ -37,7 +37,7 @@ class UserRegistered extends Mailable
     public function build()
     {
 
-        return $this
+        return $this->from('rhess@m2xc.com')
             ->subject('New user registered on m2xc')
             ->markdown('email.userregistered');
     }
