@@ -38,6 +38,7 @@ class UserRegistered extends Mailable
     {
 
         return $this
+            ->from(env('SES_VALID_EMAIL'))
             ->subject('New user registered on m2xc')
             ->markdown('email.userregistered');
     }
