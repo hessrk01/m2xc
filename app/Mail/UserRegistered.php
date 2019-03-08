@@ -37,7 +37,12 @@ class UserRegistered extends Mailable
     public function build()
     {
 
+<<<<<<< HEAD
         return $this->from('rhess@m2xc.com')
+=======
+        return $this
+            ->from(env('SES_VALID_EMAIL'))
+>>>>>>> dev
             ->subject('New user registered on m2xc')
             ->markdown('email.userregistered');
     }
